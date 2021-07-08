@@ -1,0 +1,323 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    height: 100vh !important;
+    font-family: 'Noto Sans', sans-serif;
+    color: #222222;
+}
+
+/*Clases*/
+hr {
+    width: 4.5rem;
+    border-color: #fb2056;
+}
+
+li {
+    margin-bottom: 2rem;
+}
+
+.btn-red {
+    text-decoration: none;
+    color: white;
+    font-size: 0.8rem;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-color: #fb2056;
+    padding: 1rem 2rem;
+    border-radius: 20px;
+    display: inline-block;
+    /*Aplica solamente para flexbox*/
+    align-self: center;
+}
+
+.phrase {
+    text-align: center;
+}
+
+h6 {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+/*first-section*/
+#hero {
+    background-image: linear-gradient(rgba(68,13,13,0.35), rgba(38,2,2,0.446)), url('/assets/img/hero/hero.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    color: white;
+}
+
+#hero-navigation-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto 5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+#logo {
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-stretch: wider;
+}
+
+nav > a {
+    text-decoration: none;
+    color: white;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+nav > a:hover {
+    color: #fb2056;
+    margin-left: 0;
+    margin-bottom: 3rem;
+}
+
+#hero-container {
+    margin-top: 8rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#hero-container > p {
+    text-transform: capitalize;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 300;
+}
+
+#hero-container > h1 {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-weight: 500;
+    margin-bottom: 2.5rem;
+}
+
+/*second-section*/
+#second-section {
+    background-color: #f4f5f9;
+    min-height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem;
+}
+
+/*third-section*/
+#third-section {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+#third-section-title {
+    margin-bottom: 2rem;
+}
+
+#third-section-title > h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+#third-section-container {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.third-section-components {
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.third-section-components > p {
+    margin-bottom: 2rem;
+}
+
+.third-section-components > img {
+    max-width: 100%;
+}
+
+/*fourth-section*/
+#fourth-section {
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.905)), url('/assets/img/fourth-section/img-fourth1.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+#fourth-section-container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.half {
+    width: 50%;
+}
+
+#fourth-section-right > h3 {
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+#fourth-section-right > p {
+    margin-bottom: 3rem;
+}
+
+#fourth-section-right > ul {
+    margin-bottom: 3rem;
+    line-height: 1.5rem;
+}
+
+/*fifth section*/
+#fifth-section {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+#fifth-section-left {
+    flex: 1;
+}
+
+#fifth-section-left > h3 {
+    text-transform: uppercase;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+#fifth-section-left > p {
+    margin-bottom: 4rem;
+}
+
+#fifth-section-right {
+    flex: 2;
+    display: grid;
+    grid-template-columns: repeat(2, 1rf);
+    gap: 15px 10px;
+    justify-items: center;
+    align-items: center;
+}
+
+#fifth-section-right > img {
+    max-width: 100%;
+}
+
+/*footer*/
+footer {
+    background-color: black;
+    color: white;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+/*=============RESPONSIVE DESIGN===============*/
+@media(max-width:522px) {
+    #hero {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        height: max-content;
+    }
+    #hero-navigation-bar {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: auto;
+        padding-top: 2rem;
+        padding-bottom: 0;
+    }
+
+    #hero-navigation-bar > p,
+    nav {
+        text-align: center;
+    }
+    #hero-container {
+        margin-top: 1.5rem;
+    }
+    #hero-container > p ,
+    #hero-container > a {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+    }
+    #hero-container > h1 {
+        font-size: 1.5rem;
+        line-height: 4rem;
+    }
+
+    /*Tercera sección*/
+    #third-section {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        width: 90%;
+    }
+
+    #third-section-title > h2 {
+        font-size: 1.5rem;
+    }
+
+    #third-section-container {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .third-section-components {
+        margin-bottom: 2rem;
+    }
+
+    .third-section-components > img {
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /*Cuarta Sección*/
+    #fourth-section-left {
+        display: none;
+    }
+    #fourth-section-right {
+        width: 100%;
+    }
+}
